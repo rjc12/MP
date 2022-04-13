@@ -8,7 +8,7 @@ const network = NETWORK.eth;
 
 // General metadata for Ethereum
 const namePrefix = "MetaPunks";
-const description = "Your MetaPunk will act as a goernance token regarding the rights to a community treasury of PVFD tokens which will be obtained from primary sales revenue, as well as make you eligible for gieaways of low entry cost PV items on a rolling basis!";
+const description = "MetaPunks are a community made MetaHero x CryptoPunk derivative! Something special is coming to the heart of Pixel Vault...";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
@@ -18,8 +18,16 @@ const layerConfigurations = [
     layersOrder: [
       { name: "ORIGIN" },
       { name: "BACK" },
-      { name: "BASE" },
+      { name: "MALE BASE" },
       { name: "HAT" },
+    ],
+  },{
+    growEditionSizeTo: 100,
+    layersOrder: [
+      { name: "ORIGIN" },
+      { name: "BACKS" },
+      { name: "FEMALE BASE" },
+      { name: "HATS" },
     ],
   },
 ];
@@ -51,7 +59,7 @@ const CONTRACT_SYMBOL = 'MP';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0x1a7E8d258141802ee1988C13EdD4DC2437F71b50';
 const TREASURY_ADDRESS = '0x1a7E8d258141802ee1988C13EdD4DC2437F71b50';
-const MAX_SUPPLY = 5000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
+const MAX_SUPPLY = 10000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
 const MINT_PRICE = 0.03; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 30; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
