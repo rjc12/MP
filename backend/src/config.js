@@ -9,7 +9,7 @@ const network = NETWORK.eth;
 // General metadata for Ethereum
 const namePrefix = "MetaPunks";
 const description = "MetaPunks are a community made MetaHero x CryptoPunk derivative! Something special is coming to the heart of Pixel Vault...";
-const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
+const baseUri = "ipfs://QmNpNNxcGv5AanguNx8aVfnb2qr2B33pHV66vv514FPMP8"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
@@ -43,15 +43,15 @@ const format = {
 };
 
 const extraMetadata = {
-  external_url: "", // Replace with your website or remove this line if you do not have one.
+  external_url: "https://www.metapunks.space", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
 
 // ** REQUIRED **
 const AUTH = process.env.NFTPORT_API_KEY; // Set this in the .env file to prevent exposing your API key when pushing to Github
-const LIMIT = 2; // Your API key rate limit
-const CHAIN = 'rinkeby'; // only rinkeby or polygon
+const LIMIT = 10; // Your API key rate limit
+const CHAIN = 'ethereum'; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
 const CONTRACT_NAME = 'MetaPunks';
@@ -59,19 +59,19 @@ const CONTRACT_SYMBOL = 'MP';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0x1a7E8d258141802ee1988C13EdD4DC2437F71b50';
 const TREASURY_ADDRESS = '0x1a7E8d258141802ee1988C13EdD4DC2437F71b50';
-const MAX_SUPPLY = 10000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
+const MAX_SUPPLY = 9543; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
 const MINT_PRICE = 0.03; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
-const TOKENS_PER_MINT = 30; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
+const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 const PUBLIC_MINT_START_DATE = "2022-04-20T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PRESALE_MINT_START_DATE = null; // Optional. Eg: 2022-02-08T11:30:48+00:00
+const PRESALE_MINT_START_DATE = "2022-04-19T11:30:48+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
 const ROYALTY_SHARE = 500; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
 const ROYALTY_ADDRESS = "0x1a7E8d258141802ee1988C13EdD4DC2437F71b50"; // Address that will receive the royalty
-const BASE_URI = null; // only update if you want to manually set the base uri
-const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
+const BASE_URI = "ipfs://QmNpNNxcGv5AanguNx8aVfnb2qr2B33pHV66vv514FPMP8"; // only update if you want to manually set the base uri
+const PREREVEAL_TOKEN_URI = "ipfs://QmVxMTdJfKLrhkzfGPvHTFjR11AQRECe9sHN6BVQaaoHsv"; // only update if you want to manually set the prereveal token uri
 const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually set the whitelisted addresses
 
 // ** OPTIONAL **
@@ -80,8 +80,8 @@ let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // If you want to manually inclu
 // Generic Metadata is optional if you want to reveal your NFTs
 const GENERIC = true; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
 const GENERIC_TITLE = CONTRACT_NAME; // Replace with what you want the generic titles to say if you want it to be different from the contract name.
-const GENERIC_DESCRIPTION = ""; // Replace with what you want the generic descriptions to say.
-const GENERIC_IMAGE = ""; // Replace with your generic image that will display for all NFTs pre-reveal.
+const GENERIC_DESCRIPTION = "MetaPunks are a community made MetaHero x CryptoPunk derivative! Something special is coming to the heart of Pixel Vault..."; // Replace with what you want the generic descriptions to say.
+const GENERIC_IMAGE = "ipfs://QmVxMTdJfKLrhkzfGPvHTFjR11AQRECe9sHN6BVQaaoHsv"; // Replace with your generic image that will display for all NFTs pre-reveal.
 
 // Automatically set contract address if deployed using the deployContract.js script
 try {
