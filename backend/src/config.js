@@ -9,7 +9,7 @@ const network = NETWORK.eth;
 // General metadata for Ethereum
 const namePrefix = "MetaPunks";
 const description = "MetaPunks are a community made MetaHero x CryptoPunk derivative! Something special is coming to the heart of Pixel Vault...";
-const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
+const baseUri = "ipfs://QmNax38zmgSxXTtZ1otfBcV4TttGVE1rXUokeXpNHyd54s"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
@@ -70,7 +70,7 @@ const PUBLIC_MINT_START_DATE = "2022-04-20T11:30:48+00:00"; // This is required.
 const PRESALE_MINT_START_DATE = "2022-04-19T11:30:48+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
 const ROYALTY_SHARE = 500; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
 const ROYALTY_ADDRESS = "0x1a7E8d258141802ee1988C13EdD4DC2437F71b50"; // Address that will receive the royalty
-const BASE_URI = "ipfs://NewUriToReplace"; // only update if you want to manually set the base uri
+const BASE_URI = "ipfs://QmNax38zmgSxXTtZ1otfBcV4TttGVE1rXUokeXpNHyd54s"; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = "ipfs://QmVxMTdJfKLrhkzfGPvHTFjR11AQRECe9sHN6BVQaaoHsv"; // only update if you want to manually set the prereveal token uri
 const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually set the whitelisted addresses
 
