@@ -68,7 +68,7 @@ const PUBLIC_MINT_START_DATE = "2022-04-20T11:30:48+00:00"; // This is required.
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 const PRESALE_MINT_START_DATE = null; // Optional. Eg: 2022-02-08T11:30:48+00:00
-const ROYALTY_SHARE = 750; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
+const ROYALTY_SHARE = 500; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
 const ROYALTY_ADDRESS = "0x1a7E8d258141802ee1988C13EdD4DC2437F71b50"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
@@ -78,7 +78,7 @@ const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually
 let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // If you want to manually include it
 
 // Generic Metadata is optional if you want to reveal your NFTs
-const GENERIC = false; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
+const GENERIC = true; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
 const GENERIC_TITLE = CONTRACT_NAME; // Replace with what you want the generic titles to say if you want it to be different from the contract name.
 const GENERIC_DESCRIPTION = ""; // Replace with what you want the generic descriptions to say.
 const GENERIC_IMAGE = ""; // Replace with your generic image that will display for all NFTs pre-reveal.
@@ -103,7 +103,7 @@ const solanaMetadata = {
   external_url: "",
   creators: [
     {
-      address: "0x6E5505d2df04e543a9Bd1CDe9EA1f54BB5e1891A",
+      address: "0x1a7E8d258141802ee1988C13EdD4DC2437F71b50",
       share: 100,
     },
   ],
