@@ -1,24 +1,24 @@
-const contractAddress = "0xc4967b40111613d640AeA12E64395d334648cB18"; //Replace with your own contract address
-const chain = 'rinkeby'; // rinkeby or polygon
+const contractAddress = "0xc97F2073f93CaAAD39990B2f2f2Bfd2BF7291780"; //Replace with your own contract address
+const chain = 'ethereum'; // rinkeby or polygon
 
-const welcome_h1 = "Welcome to the Long Leg Larry Lounge!!";
+const welcome_h1 = "Welcome to the MetaPunks Landing Station!!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
-const welcome_p = "The Larrys are happy to see you!"
+const welcome_p = "MetaPunks are happy you're here!"
 const h1_presale_coming_soon = "Coming Soon!!";
 const h1_presale_mint = "Pre-Sale Mint Open!!";
 const h1_public_mint = "Public Mint Open!!";
 const h2_presale_coming_soon = "Pre-Sale Mint Countdown";
 const h2_presale_mint = "Public Mint Countdown";
-const p_presale_coming_soon = "We are working dilligently to launch our Larrys. Stay tuned for updates!";
+const p_presale_coming_soon = "We are working dilligently to launch. Stay tuned for updates!";
 const p_presale_mint_not_whitelisted = "You are not whitelisted for the pre-sale.. 😢";
 const p_presale_mint_whitelisted = "You're on the whitelist for the pre-sale! 🎉";
 const p_presale_mint_already_minted = "You've already claimed your whitelist mint. Thank you! 🎉";
 const p_public_mint = "No whitelist needed. Public minting is now open! 🎉";
 const button_presale_coming_soon = "Get on the Whitelist";
-const button_presale_mint_whitelisted = "Mint Your Long Leg Larry!";
+const button_presale_mint_whitelisted = "Mint Your MetaPunk!";
 const button_presale_mint_not_whitelisted = "Get on the Whitelist";
 const button_presale_already_minted = "Join The Community";
-const button_public_mint = "Mint Your Long Leg Larry!";
+const button_public_mint = "Mint Your MetaPunk!";
 const mint_failed = "Minting failed. 😢 Please try again.";
 
 const abi = [
